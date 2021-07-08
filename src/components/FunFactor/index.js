@@ -3,6 +3,7 @@ import { Col } from 'react-bootstrap'
 import { connect } from "react-redux"
 import { getAllFunFactorInfo } from '../../actions/funfactor.actions'
 import { bindActionCreators } from 'redux'
+import Image from 'next/image'
 
 class FunFactor extends Component {
     constructor(){
@@ -19,7 +20,7 @@ class FunFactor extends Component {
                         <Col lg={3} md={6} className="text-center" key={index}>
                             <div className="single-fact">
                                 <div className="icon">
-                                    <img src={require(`./../../../public/images/icons/${item.img}.png`)} alt="icon" />
+                                    <Image src={require(`./../../../public/images/icons/${item.img}.png`)} alt="icon" />
                                 </div>    
                                 <h2 className="title fact-count">{item.count}</h2>
                                 <h3 className="sub-title">{item.label}</h3>

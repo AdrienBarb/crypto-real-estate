@@ -10,10 +10,7 @@ const AboutSection = () => {
                     <Col md={12}>
                         <SectionTitle title="About CoinAge" subTitle="Introduce" />
                     </Col>
-                    <Col lg={6}>
-                        hello
-                    </Col>
-                    <Col lg={6}>
+                    <Col lg={12}>
                         <div className="pd-top-37">
                             <h3 className="entry-title">Everything You Need To Know!</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt uto labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

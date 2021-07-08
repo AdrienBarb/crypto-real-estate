@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { Row, Col } from 'react-bootstrap'
 import { getAllSafeInfo } from '../../actions/safe.actions'
 import { bindActionCreators } from 'redux'
+import Image from 'next/image'
 
 class Safe extends Component {
     constructor(){
@@ -19,7 +20,7 @@ class Safe extends Component {
                         <Col lg={4} md={6} key={index}>
                             <div className={"safe-factor safe-factor-" + (index + 1)}>
                                 <div className="icon">
-                                    <img src={require(`./../../../public/images/icons/${item.img}.png`)} alt="safe" />
+                                    <Image src={require(`./../../../public/images/icons/${item.img}.png`)} alt="safe" />
                                 </div>
                                 <div className="safe-factor-details">
                                     <h4 className="title">{item.label}</h4>

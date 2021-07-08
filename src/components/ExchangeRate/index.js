@@ -1,10 +1,11 @@
 import React from "react";
+import Image from 'next/image'
 function ExchangeRate(props) {
     return (
      <div className="exchange-rate-single">
          <div className="title-wrap">
             <div className="icons">
-                <img src={require(`./../../../public/images/info/${props.item.img}.png`)} alt="image" />
+                <Image src={require(`./../../../public/images/info/${props.item.img}.png`)} alt="image" />
             </div>
             <div className="title">
                 {props.item.label.split("/")[0]} <span>/ {props.item.label.split("/")[1]}</span>

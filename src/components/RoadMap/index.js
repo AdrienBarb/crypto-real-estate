@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { connect } from "react-redux"
 import { getAllRoadMapInfo } from '../../actions/roadmap.actions'
 import { bindActionCreators } from 'redux'
+import Image from 'next/image'
 
 class RoadMap extends Component {
     constructor(){
@@ -17,7 +18,7 @@ class RoadMap extends Component {
                     this.props.roadMapInfo.map( (item, index) => (
                         <div className={(item.isBottom == true) ? 'single-map' : 'single-map single-map-2'} key={index}>
                             <div className="icons">
-                                <img src={require(`./../../../public/images/icons/${item.img}.png`)} alt="road" />
+                                <Image src={require(`./../../../public/images/icons/${item.img}.png`)} alt="road" />
                             </div>
                             <div className={`bars mbg-${item.color}`}></div>
                             <div className="details">

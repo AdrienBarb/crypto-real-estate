@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import WidgetAbout from '../../components/WidgetAbout'
-import WidgetRecentPost from '../../components/WidgetRecentPost'
 import WidgetSubscribe from '../../components/WidgetSubscribe'
 import Copyright from '../../components/Copyright'
 const FooterSection = () => {
@@ -11,9 +10,6 @@ const FooterSection = () => {
                 <Row className="justify-content-md-center">
                     <Col lg={4} md={6}>
                         <WidgetAbout />
-                    </Col>
-                    <Col lg={4} md={6}>
-                        <WidgetRecentPost title="Recent Post" min="0" max="2" />
                     </Col>
                     <Col lg={4} md={12}>
                         <WidgetSubscribe 

@@ -7,6 +7,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons' 
 import { faPinterestP } from '@fortawesome/free-brands-svg-icons' 
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons' 
+import Image from 'next/image'
 
 
 class WidgetAbout extends Component {
@@ -24,7 +25,7 @@ class WidgetAbout extends Component {
                         <React.Fragment key={index}>
                             <div className="footer-logo" key={index}>
                                 <a href={item.logo[0].url}>
-                                    <img src={require(`./../../../public/images/${item.logo[0].image_url}.png`)} alt="logo" />
+                                    <Image src={require(`./../../../public/images/${item.logo[0].image_url}.png`)} alt="logo" />
                                 </a>
                             </div>
                             <p className="content">{item.text}</p>

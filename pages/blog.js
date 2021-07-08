@@ -10,6 +10,7 @@ import MainLayout from '../src/components/Layout'
 import InnerPageSection from '../src/containers/InnerPageSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faCalendar, faComments, faHeart } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 
 import FooterSection from '../src/containers/FooterSection'
 
@@ -32,7 +33,7 @@ class blog extends Component {
                                     this.props.blogInfo.map((item, index) => (
                                         <div className="single-post" key={index}>
                                             <div className="entry-thum">
-                                            <img src={require(`./../public/images/blog/big/${item.img}.jpg`)}  alt="blog" />
+                                            <Image src={require(`./../public/images/blog/big/${item.img}.jpg`)}  alt="blog" />
                                             </div>
                                             <div className="post-details">
                                                 <div className="entry-title">

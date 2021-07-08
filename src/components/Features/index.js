@@ -3,6 +3,7 @@ import { Col } from 'react-bootstrap'
 import { connect } from "react-redux"
 import { getAllFeaturesInfo } from '../../actions/features.actions'
 import { bindActionCreators } from 'redux'
+import Image from 'next/image'
 
 class Features extends Component {
     constructor(){
@@ -19,7 +20,7 @@ class Features extends Component {
                         <Col lg={4} md={6} className="text-center" key={index}>
                             <div className="single-element">
                                 <div className="thumb">
-                                    <img src={require(`./../../../public/images/icons/${item.img}.png`)} alt="icon" />
+                                    <Image src={require(`./../../../public/images/icons/${item.img}.png`)} alt="icon" />
                                 </div>
                                 <h4 className="entry-title"><a href="#">{item.label}</a></h4>
                                 <p>{item.text}</p>

@@ -8,6 +8,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons' 
 import { faPinterestP } from '@fortawesome/free-brands-svg-icons' 
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons' 
+import Image from 'next/image'
 
 class Team extends Component {
     constructor(){
@@ -25,7 +26,7 @@ class Team extends Component {
                             <div className="team-single">
                                 <div className="entry-thumbnail">
                                     <div className="team-overlay"></div>
-                                    <img src={require(`./../../../public/images/team/${item.img}`)} className="img-responsive" alt="Team" />
+                                    <Image src={require(`./../../../public/images/team/${item.img}`)} className="img-responsive" alt="Team" />
                                 </div>
                                 <div className="entry-social">
                                     <a href={item.facebook}><span><FontAwesomeIcon icon={faFacebookF} /></span></a>

@@ -11,7 +11,6 @@ import TeamSection from '../src/containers/TeamSection'
 import PriceSection from '../src/containers/PriceSection'
 import FunFactSection from '../src/containers/FunFactSection'
 import SafeSection from '../src/containers/SafeSection'
-import BlogSection from '../src/containers/BlogSection'
 import ContactSection from '../src/containers/ContactSection'
 import FooterSection from '../src/containers/FooterSection'
 
@@ -27,7 +26,6 @@ const index = () => {
      <PriceSection />
      <FunFactSection />
      <SafeSection />
-     <BlogSection />
      <ContactSection />
      <FooterSection />
    </MainLayout>

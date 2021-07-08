@@ -3,6 +3,7 @@ import Slider from "react-slick"
 import { connect } from "react-redux"
 import { getAllPartnerInfo } from '../../actions/partner.actions'
 import { bindActionCreators } from 'redux'
+import Image from 'next/image'
 
 class PartnerCarousel extends Component {
     constructor(){
@@ -52,7 +53,7 @@ class PartnerCarousel extends Component {
                     this.props.partnerInfo.map( (item, index) => (
                         <div className="item" key={index}>
                             <div className="logo-area">
-                                <a href={item.url}><img src={require(`./../../../public/images/partner/${item.img}.png`)} alt="image" /></a>
+                                <a href={item.url}><Image src={require(`./../../../public/images/partner/${item.img}.png`)} alt="image" /></a>
                             </div>
                         </div>
                     ))
