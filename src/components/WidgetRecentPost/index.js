@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { connect } from "react-redux"
+import Image from 'next/image'
 
 const WidgetRecentPost = (props) => {
     let min = (props.min ? props.min : 0);
@@ -16,7 +17,7 @@ const WidgetRecentPost = (props) => {
                         <div className="media" key={index}>
                             <div className="media-left">
                                 <a href="#">
-                                    <img src={require(`./../../../public/images/blog/small/${item.img}.png`)} alt="image" />
+                                    <Image src={require(`./../../../public/images/blog/small/${item.img}.png`)} alt="image" />
                                 </a>
                             </div>
                             <div className="media-body">

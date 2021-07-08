@@ -4,6 +4,7 @@ import Tags from '../Tags'
 import Disqus from 'disqus-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faCalendar, faComments, faHeart } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 
 const PostBody = (props) => {
     const disqusShortname = 'example';
@@ -15,7 +16,7 @@ const PostBody = (props) => {
     return(
         <React.Fragment>
             <div className="post-thumb">
-                <img src={require(`./../../assets/images/blog/big/${props.data[0].img}.jpg`)} className="img-responsive" alt="image" />
+                <Image src={require(`./../../assets/images/blog/big/${props.data[0].img}.jpg`)} className="img-responsive" alt="image" />
             </div>
             <div className="meta-post">
                 <ul className="meta-tag">
