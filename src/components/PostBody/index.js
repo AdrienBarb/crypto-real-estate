@@ -16,7 +16,7 @@ const PostBody = (props) => {
     return(
         <React.Fragment>
             <div className="post-thumb">
-                <Image src={require(`./../../assets/images/blog/big/${props.data[0].img}.jpg`)} className="img-responsive" alt="image" />
+                <Image src={require(`./../../../public/images/blog/big/${props.data[0].img}.jpg`)} className="img-responsive" alt="image" />
             </div>
             <div className="meta-post">
                 <ul className="meta-tag">
