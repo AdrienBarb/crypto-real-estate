@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle'
 import RoadMap from '../../components/RoadMap'
 const RoadMapSection = () => {
     return(
-        <div className="roadmap-section text-center">
+        <div className="roadmap-section text-center" id="roadmap">
             <Container>
                 <Row className="row-eq-rs-height">
                     <Col md={12}>

@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle'
 import Team from '../../components/Team'
 const TeamSection = () => {
     return(
-        <div className="team-section">
+        <div className="team-section" id="team">
             <Container>
                 <Row className="row-eq-rs-height">
                     <Col md={12}>

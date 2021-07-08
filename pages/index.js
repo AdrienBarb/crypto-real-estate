@@ -20,12 +20,12 @@ const index = () => {
      <BannerSection />
      <AboutSection />
      <WorkSection />
-     <RoadMapSection />
      <FeatureSection />
+     <RoadMapSection />
      <TeamSection />
-     <PriceSection />
-     <FunFactSection />
-     <SafeSection />
+     {/* <PriceSection /> */}
+     {/* <FunFactSection /> */}
+     {/* <SafeSection /> */}
      <ContactSection />
      <FooterSection />
    </MainLayout>

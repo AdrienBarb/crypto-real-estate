@@ -19,9 +19,9 @@ magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     <Col md={6}>
                         <ContactForm />
                     </Col>
-                    <Col className="pd-top-150">
+                    {/* <Col className="pd-top-150">
                         <PartnerCarousel />
-                    </Col>
+                    </Col> */}
                 </Row>
             </Container>
 	    </div>
