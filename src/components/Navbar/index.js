@@ -13,7 +13,7 @@ function MainNavbar(){
                     <ul className="nav navbar-nav navbar-right ml-auto">
                         <li className="nav-item"><Nav.Link eventKey="1" href="#about">Le Projet</Nav.Link></li>
                         <li className="nav-item"><Nav.Link eventKey="2" href="#roadmap">Road Map</Nav.Link></li>
-                        <li className="nav-item"><Nav.Link eventKey="3" href="#team">L'équipe</Nav.Link></li>
+                        <li className="nav-item"><Nav.Link eventKey="3" href="#team">Team</Nav.Link></li>
                         <li className="nav-item"><Nav.Link eventKey="4" href="#contact">Nous Contacter</Nav.Link></li>
                         {/* <li className="nav-item sign-in-btn"><Nav.Link eventKey="7" className="nav-link btn btn-red" href="#singin">Sign In</Nav.Link></li> */}
                     </ul>
